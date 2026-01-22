@@ -1,4 +1,4 @@
-html
+<html></html>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -25,13 +25,6 @@ html
         .in-progress {
             color: orange;
         }
-        css
-        .feature-list {
-            background-color: #e7f3ff;
-            padding: 15px;
-            border-left: 4px solid #0366d6;
-            margin: 20px 0;
-        }
     </style>
 </head>
 <body>
@@ -50,45 +43,14 @@ html
             <li>○ Создание Pull Request</li>
         </ul>
     </section>
-   html
-    <div class="feature-list">
-        <h3>Планируемые улучшения:</h3>
-        <p>Следите за обновлениями в <a href="#">Issues</a></p>
-    </div>
+    
     <footer>
         <p>Создано с помощью GitHub</p>
         <p>Дата: <span id="current-date"></span></p>
     </footer>
-    html
-    <section>
-        <h2>Связаться со мной</h2>
-        <form id="contact-form">
-            <div>
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
     
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Спасибо за сообщение! (Это демо-форма)');
-            this.reset();
-        });
-    </script>
     <script>
         document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
     </script>
 </body>
 </html>
-Commit message: "Создана основная HTML страница"
